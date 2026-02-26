@@ -383,24 +383,6 @@
             </div>
         </main>
     </div>
-
-    <script>
-        document.getElementById('theme-toggle-input').addEventListener('change', function() {
-            document.body.classList.toggle('dark-mode');
-        });
-
-        document.querySelectorAll('.timer-start-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const duration = this.getAttribute('data-duration');
-                alert('Iniciando timer de ' + duration + ' segundos para esta actividad.');
-            });
-        });
-
-        function copyPrompt(id) {
-            const text = document.getElementById(id).innerText;
-            navigator.clipboard.writeText(text);
-            alert('Prompt copiado al portapapeles');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
